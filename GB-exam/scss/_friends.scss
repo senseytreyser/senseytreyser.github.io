@@ -1,0 +1,51 @@
+﻿.friends{
+    align-items: center;
+    background-color: #424245;
+    background-image: url(../img/bg_friends.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 120px 0;
+    position: relative;
+}
+
+.friend{
+    &-link{
+        display: block;
+        margin: 0 45px;
+        position: relative;
+        z-index: 3;
+    }
+    &-img{
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+.dark-cover{
+    background-color: #000;
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;   
+    z-index: 1;   
+}
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .friends{
+        justify-content: space-around;
+        padding: 30px $MEDIA_L_R_PADDING;
+    }
+
+    .friend{
+        &-link{
+            margin: 20px 0;
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+﻿.service{
+    $color_txt: #8c8c8c;
+    $color_txt_hover: #c7b299;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+    &-item{
+        display: flex;
+        color: $color_txt;
+        cursor: pointer;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 80px 15px;
+        width: 270px;
+        
+        &:after{
+            $unhover_line_color: #f1eee9;
+            align-self: flex-end;
+            border-bottom: 2px solid $unhover_line_color;
+            content: "";
+            display: inline-block;
+            width: 70px;
+        }
+
+        &:hover:after{
+            border-bottom: 2px solid $color_txt_hover;
+        }
+
+        &:hover &-title{
+            color: $color_txt_hover;
+        }
+        &:hover &-svg{
+            fill: $color_txt_hover;
+        }
+
+        &-svg{
+            fill: #555;
+        }
+        
+        &-title{
+            font-family: $raleway_regular;
+            font-size: 22px;
+            font-weight: 900;
+            text-align: center;
+            margin: 30px 0 10px 0;
+            width: 100%;
+        }
+        
+        &-txt{
+            font-family: $montserrat-light;
+            font-size: 14px; 
+            line-height: 24px;
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .service{
+        box-sizing: border-box;
+        padding: 20px $MEDIA_L_R_PADDING;
+
+        &-item{
+            margin: 20px 0;
+            width: 100%;
+        }
+    }
+}

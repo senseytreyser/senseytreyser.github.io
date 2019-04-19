@@ -1,0 +1,37 @@
+﻿@mixin gradient ($first_color:#211b19,$second_color:#4e3427) {
+    background: $first_color; 
+    background: -moz-linear-gradient(left, $first_color 0%, $second_color 100%); 
+    background: -webkit-linear-gradient(left, $first_color 0%,$second_color 100%); 
+    background: linear-gradient(to right, $first_color 0%,$second_color 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first_color', endColorstr='$second_color',GradientType=1 ); 
+}
+
+@mixin text ($size:16px,$line-height:28px,$color: #8c8c8c,$align:center){
+    color: $color;
+    font-family:$montserrat-light;
+    font-size: $size;
+    line-height: $line-height;
+    text-align: $align;
+}
+
+@mixin title ($size:30px, $color:#555,$align:center){
+    color: $color;
+    font-family: $raleway_regular;
+    font-weight: 900;
+    font-size: $size;
+    text-align: $align;
+}
+
+@mixin border-radius ($r:10px){
+    -moz-border-radius: $r; /* Firefox */
+    -webkit-border-radius: $r; /* Safari, Chrome */
+    -khtml-border-radius: $r; /* KHTML */
+    border-radius: $r; /* CSS3 */
+}
+
+@mixin hyphens{
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}

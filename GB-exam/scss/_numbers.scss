@@ -1,0 +1,45 @@
+﻿.numbers{
+    @include gradient;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 60px 0;
+
+    &-part{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+
+        &:after{
+            border: 1px solid #fff;
+            content: "";
+            justify-self: end;
+            align-self: center;
+            width: 30px;
+        }
+    }
+
+    &-svg{
+        height: 44px;
+        //width: 60px;  
+        fill: #c7b299;
+    }
+
+    &-number{
+        @include text($size:48px,$color:#fff,$line-height:0.75);
+        margin: 30px 0 20px 0;
+    }
+
+    &-txt{
+        @include text($size:14px,$color:#c7b299,$line-height:1.5);
+        margin: 0 0 30px 0;
+        text-transform: uppercase;
+    }
+
+}
+
+@media (max-width: $MEDIA_WIDTH_SMALL){
+    .numbers{
+        display: none;
+    }
+}
