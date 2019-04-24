@@ -1,0 +1,29 @@
+﻿@font-face{
+    src: url(../font/open-sans-regular.ttf);
+    font-family: open-sans-regular;
+}
+
+@font-face{
+    src: url(../font/open-sans-bold.ttf);
+    font-family: open-sans-bold;
+}
+
+$open_sans_reg: open-sans-regular, Arial, Helvetica, sans-serif;
+$open_sans_bold: open-sans-bold, Arial, Helvetica, sans-serif;
+
+@mixin txt ($size:14px, $line-height:1.4, $color: $txt_color_dark, $align:left){
+    color: $color;
+    font-family:$open_sans_reg;
+    font-size: $size;
+    line-height: $line-height;
+    text-align: $align;  
+}
+
+@mixin title ($size:35px, $line-height:1, $color:$title_color_dark, $align:left){
+    color: $color;
+    font-family: $open_sans_bold;
+    //font-weight: 900;
+    font-size: $size;
+    line-height: $line-height;
+    text-align: $align;  
+}

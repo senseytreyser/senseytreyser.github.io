@@ -1,0 +1,31 @@
+﻿.search{
+    align-items: stretch;
+    display: flex;
+
+    &__input{
+        @include txt($size:19px);
+        border: 1px solid $search_br_color;
+        border-right:none;
+        padding: 0 5px; 
+
+        &:focus{
+            outline: none;
+            border-color: $search_br_hov_color;
+        }
+
+        &::-ms-clear {  display: none; width : 0; height: 0; }
+        &::-ms-reveal {  display: none; width : 0; height: 0; }
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration { display: none; }
+    }
+
+    &__button{
+        @include title($size:19px, $line-height:2, $color: $txt_color_light, $align:center);
+        background-color: $search_btn_color;
+        border: none;
+        padding: 0 25px;
+        text-transform: uppercase;
+    }
+}

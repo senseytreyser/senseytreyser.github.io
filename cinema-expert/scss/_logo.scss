@@ -1,0 +1,27 @@
+﻿.logo{
+    @include logo-grad;
+    position: relative;
+
+    &__link{
+        align-items: flex-end;
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__txt{
+        @include title($size:42px, $color:$title_color_light, $align:left);
+        display: block;  
+        padding: 0 3.5px;
+    }
+
+    &:after{
+        background-color: $bg_color_content;
+        content: "";
+        position: absolute;
+        height: 10px;
+        right: 0;
+        top: 0;
+        width: 50%;
+    }
+}

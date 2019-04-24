@@ -1,0 +1,40 @@
+﻿.nav{
+
+    &__list{
+        background-color: $bg_color_nav_gray;
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__link{
+        @include txt($size:18px, $line-height:2, $color: $txt_color_light, $align: center);  
+        display: flex;
+        text-transform: uppercase;
+        padding: 0 20px;
+    }
+
+    &__item{
+        
+        &:nth-of-type(1){
+            background-color: $bg_color_nav_blue;
+        }
+        &:nth-of-type(2){
+            background-color: $bg_color_nav_green;
+        }
+        &:nth-of-type(3){
+            background-color: $bg_color_nav_violet;
+        }
+        &:nth-of-type(4){
+            background-color: $bg_color_nav_pink;
+        }
+        &:nth-of-type(5){
+            background-color: $bg_color_nav_orange;
+        }
+        &:nth-of-type(6){
+            background-color: $bg_color_nav_red;
+        }
+        &:nth-of-type(7){
+            background-color: $bg_color_nav_gray;
+        }
+    }
+}
