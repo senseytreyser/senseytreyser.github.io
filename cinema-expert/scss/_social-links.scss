@@ -1,0 +1,29 @@
+﻿.social-links{
+    display: flex;
+
+    &__link{
+        display: block;
+        height: 36px;
+        margin-left: 5px;
+        width: 38px;
+
+        &_rss{
+            background-color: $icn_bg_rss;
+            background-image: url(../img/icon_rss.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &_fb{
+            background-color: $icn_bg_fb;
+            background-image: url(../img/icon_fb.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &_tw{
+            background-color: $icn_bg_tw;
+            background-image: url(../img/icon_tw.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}

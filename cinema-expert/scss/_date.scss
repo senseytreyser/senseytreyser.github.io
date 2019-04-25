@@ -1,0 +1,15 @@
+﻿.date{
+    width: 68px;
+
+    &__day{
+        @include title($size:35px, $line-height:1.5, $color:$title_color_light, $align:center);
+        background-color: $bg_date_color_day;
+        display: block;
+    }
+    &__month{
+        @include txt($size:19px, $color:$txt_color_light, $align:center);
+        background-color: $bg_date_color_month;
+        display: block;
+        text-transform: uppercase;
+    }
+}

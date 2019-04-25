@@ -14,8 +14,11 @@ $bg_color_content: #fff;
 // Текст
 $txt_color_light: #fff;
 $txt_color_dark: #494949;
-$totle_color_dark: #000;
+$title_color_dark: #000;
 $title_color_light: #fff;
+
+// Ссылки
+$link_color: $blue;
 
 // Логотип
 $logo_color1: $blue;
@@ -26,6 +29,11 @@ $search_btn_color: $blue;
 $search_br_color: #e5e5e5;
 $search_br_hov_color: $blue;
 
+// Иконки социальных сетей
+$icn_bg_rss: $orange;
+$icn_bg_fb: $violet;
+$icn_bg_tw: $blue;
+
 // Меню навигации
 $bg_color_nav_blue: $blue;
 $bg_color_nav_green: $green;
@@ -34,3 +42,19 @@ $bg_color_nav_pink: $pink;
 $bg_color_nav_orange: $orange;
 $bg_color_nav_red: $red;
 $bg_color_nav_gray: $gray;
+
+// Блок с датой публикации
+$bg_date_color_day: $orange ;
+$bg_date_color_month: $blue;
+
+//Блок интересного
+$bg_color_intersting_title: $violet;
+$br_color_interesting: #dedddd;
+$bg_btn1: $pink;
+$bg_btn2: $orange;
+$bg_btn3: $blue;
+$info_block_title_color: $blue;
+
+// Блок понравившейся информации
+$bg_color_liked_title: $bg_color_intersting_title;
+$br_color_liked: $br_color_interesting;

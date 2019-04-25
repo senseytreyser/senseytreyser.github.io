@@ -1,0 +1,20 @@
+﻿.liked{
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        $title_size: 17px;
+
+        @include title($size:$title_size, $line-height:2, $color:$title_color_light, $align:left);
+        background-color: $bg_color_liked_title;
+        margin-top: 11px;
+        padding: 0 18px;
+        text-transform: uppercase;  
+    }
+    &__content{
+
+    }
+    &__shot-block{
+        margin-top: 17px;
+    }
+}

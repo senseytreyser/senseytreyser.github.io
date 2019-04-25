@@ -1,0 +1,46 @@
+﻿.tab-btns{
+    display: flex;
+
+    &__btn{
+        $btn_width: 100% / 3;
+
+        @include txt($size:19px, $line-height:2, $color:$title_color_light, $align:center);
+        border: none;
+        position: relative;
+        width: $btn_width;
+
+        &::after{
+            $angle_size: 7px;
+            
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: $angle_size $angle_size 0 $angle_size;
+            border-color: transparent;
+            position: absolute;
+            left: 50%;
+            bottom: - $angle_size;
+            transform: translate(-50%);
+        }
+
+        &:nth-of-type(1){
+            background-color: $bg_btn1;
+        }
+        &:nth-of-type(1)::after{
+            border-top-color: $bg_btn1;
+        }
+        &:nth-of-type(2){
+            background-color: $bg_btn2;
+        }
+        &:nth-of-type(2)::after{
+            border-top-color: $bg_btn2;
+        }
+        &:nth-of-type(3){
+            background-color: $bg_btn3;
+        }
+        &:nth-of-type(3)::after{
+            border-top-color: $bg_btn3;
+        }
+    }    
+}

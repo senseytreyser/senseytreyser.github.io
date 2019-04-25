@@ -1,0 +1,25 @@
+﻿.info-block{
+    align-items: flex-start;
+    display: flex;
+    padding: 18px 0;
+
+    &__img{
+        border: 1px solid $br_color_interesting;
+        outline: 2px solid $bg_color_content;
+        outline-offset: -3px;
+        width: 77px;
+    }
+
+    &__content{
+        margin-left: 11.5px;
+    }
+
+    &__title{
+        @include title($size:15px, $line-height:1.25, $color:$info_block_title_color);
+    }
+
+    &__txt{
+        @include txt($size:13px, $line-height:1.3, $color:$txt_color_dark);    
+        margin-top: 8px;
+    }
+}

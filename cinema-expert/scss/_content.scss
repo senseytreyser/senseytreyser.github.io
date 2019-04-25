@@ -1,7 +1,36 @@
 ﻿.content{
     background-color: $bg_color_content;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: $max_w_content;
     padding: 23px;
+    position: relative;
+
+    &_color-line{
+        $width: 13px;
+        $height_1: 500px;
+        $height_2: 347px;
+
+        &:before,
+        &:after{
+            content: "";
+            width: $width;
+            position: absolute;
+            right: - $width;
+            background-repeat: no-repeat; 
+        }
+        &:before{
+            top: 0;
+            height: $height_1;
+            background-image: url(../img/top_color_line.png);
+        }
+        &:after{
+            bottom: 0;
+            height: $height_2;
+            background-image: url(../img/bottom_color_line.png);
+        }
+    }
 }

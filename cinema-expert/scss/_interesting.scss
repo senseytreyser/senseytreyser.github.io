@@ -1,0 +1,50 @@
+﻿.interesting{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__title{
+        $title_size: 19px;
+
+        @include title($size:$title_size, $line-height:2, $color:$title_color_light, $align:left);
+        box-sizing: border-box;
+        background-color: $bg_color_intersting_title;
+        display: inline-block;
+        text-transform: uppercase;  
+        padding: 0 18px;
+        position: relative;
+
+        &:after{
+            $br_size: $title_size * 2;
+            
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: $br_size 0 0 $br_size;
+            border-color: transparent transparent transparent $bg_color_intersting_title;
+            position: absolute;
+            right: - $br_size;
+            top: 0;
+        }
+    }
+
+    &__tab-btns{
+        margin-top: 4px;
+        width: 100%;
+    }
+
+    &__content{
+        width: 100%;
+    }
+
+    &__info-block{
+        border-bottom: 1px solid $br_color_interesting;
+        width: 100%;
+
+        &:last-of-type{
+            border-color: transparent;
+        }
+    }
+}

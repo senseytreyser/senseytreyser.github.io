@@ -1,11 +1,14 @@
-﻿@import "reset",
-"constants",
-"colors",
-"fonts",
-"body",
-"content",
-"header",
-"logo-grad",
-"logo",
-"search",
-"nav";
+﻿// Подготавливающие файлы
+@import "reset", "constants", "colors", "fonts";
+
+// Основные блоки
+@import "body", "content";
+
+// Блок header
+@import "header", "logo-grad", "logo", "search", "social-links", "nav";
+
+// Блок main
+@import "main", "article", "date", "carousel";
+
+// Блок aside
+@import "aside", "interesting", "tab-btns", "info-block", "liked", "shot-block";

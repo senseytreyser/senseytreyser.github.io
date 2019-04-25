@@ -1,0 +1,23 @@
+.carousel{
+    border: 1px solid $br_color_interesting;
+    box-sizing: border-box;
+    padding: 12px;
+
+    &__window{
+        width: 100%;
+        height: auto;
+    }
+
+    &__img-row{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+
+    &__img{
+        cursor: pointer;
+        border: 1px solid $br_color_interesting;
+        outline: 2px solid $bg_color_content;
+        outline-offset: -3px;
+    }
+}

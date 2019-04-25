@@ -7,7 +7,7 @@
     <title>Эксперт Кино</title>
 </head>
 <body>
-    <div class="content">
+    <div class="content content_color-line">
         <header class="header">
             <div class="logo header__logo">
                 <a href="#" class="logo__link"><span class="logo__txt">Эксперт</span></a> 
@@ -17,9 +17,9 @@
                 <button class="search__button">Поиск</button>
             </div>
             <div class="social-links header__social-links">
-                <a href="#" class="link link_rss header__link"></a> 
-                <a href="#" class="link link_fb header__link"></a>
-                <a href="#" class="link link_tw header__link"></a>
+                <a href="#" class="social-links__link social-links__link_rss"></a> 
+                <a href="#" class="social-links__link social-links__link_fb"></a>
+                <a href="#" class="social-links__link social-links__link_tw"></a>
             </div>
             
             <nav class="nav header__nav">
@@ -45,58 +45,66 @@
                 </h1>
                 <p class="txt article__txt">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-    
-                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.    
                 </p>
-                <div class="carousel article__carousel"></div>
-                <p class="txt acticle__txt">
+                <div class="carousel article__carousel">
+                    <img src="img/slider_0.png" alt="главное изображение" class="carousel__window">
+                    <div class="carousel__img-row">
+                        <img src="img/slider_1.png" alt="" class="carousel__img">
+                        <img src="img/slider_2.png" alt="" class="carousel__img">
+                        <img src="img/slider_3.png" alt="" class="carousel__img">
+                        <img src="img/slider_4.png" alt="" class="carousel__img">
+                    </div>
+                </div>
+                <p class="txt article__txt">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.                    
                 </p>
             </article>
         </main>
-        <aside class="acide">
+        <aside class="aside">
             <section class="interesting">
-                <h2 class="interting__title">Интересное</h2>
-                <div class="interesting__buttons-row">
-                    <button class="interesting__button">Мода</button>
-                    <button class="interesting__button">Кино</button>
-                    <button class="interesting__button">TV</button>
+                <h2 class="title title_triangle-violet interesting__title">Интересное</h2>
+                <div class="tab-btns interesting__tab-btns">
+                    <button class="tab-btns__btn interesting__btn">Мода</button>
+                    <button class="tab-btns__btn interesting__btn">Кино</button>
+                    <button class="tab-btns__btn interesting__btn">TV</button>
                 </div>
                 <div class="interesting__content">
-                    <section class="info-blok interesting__info-block">
-                        <img src="" alt="" class="info-block__img">
+                    <section class="info-block interesting__info-block">
+                            <a href="#" class="info-block__img-link">
+                                <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
+                            </a>
                         <div class="info-block__content">
-                            <h3 class="info_block__title">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                            <h3 class="info-block__title">
+                                Lorem Ipsum is simply dummy text of the printing 
                             </h3>
                             <p class="info-block__txt">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.        
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
                             </p>
                         </div>
                     </section>
-                    <section class="info-blok interesting__info-block">
-                        <img src="" alt="" class="info-block__img">
+                    <section class="info-block interesting__info-block">
+                            <a href="#" class="info-block__img-link">
+                                <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
+                            </a>
                         <div class="info-block__content">
-                            <h3 class="info_block__title">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                            <h3 class="info-block__title">
+                                Lorem Ipsum is simply dummy text of the printing 
                             </h3>
                             <p class="info-block__txt">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
                             </p>
                         </div>
                     </section>
-                    <section class="info-blok interesting__info-block">
-                        <img src="" alt="" class="info-block__img">
+                    <section class="info-block interesting__info-block">
+                        <a href="#" class="info-block__img-link">
+                            <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
+                        </a>
                         <div class="info-block__content">
-                            <h3 class="info_block__title">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting    
+                            <h3 class="info-block__title">
+                                Lorem Ipsum is simply dummy text of the printing 
                             </h3>
                             <p class="info-block__txt">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
                             </p>
                         </div>
                     </section>
@@ -106,7 +114,7 @@
                 <h2 class="liked__title">Понравилось посетителям</h2>
                 <div class="liked__content">
                     <section class="shot-block liked__shot-block">
-                        <img src="" alt="" class="shot-block__img">
+                        <img src="img/liked_photo.png" alt="Фото двух мужчин" class="shot-block__img" width="73" height="73">
                         <div class="shot-block__content">
                             <p class="shot-block__txt">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="shot-block__link">Medication »</a>
@@ -114,7 +122,7 @@
                         </div>
                     </section>
                     <section class="shot-block liked__shot-block">
-                        <img src="" alt="" class="shot-block__img">
+                        <img src="img/liked_photo.png" alt="Фото двух мужчин" class="shot-block__img" width="73" height="73">
                         <div class="shot-block__content">
                             <p class="shot-block__txt">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="shot-block__link">Medication »</a>
@@ -122,7 +130,7 @@
                         </div>
                     </section>
                     <section class="shot-block liked__shot-block">
-                        <img src="" alt="" class="shot-block__img">
+                        <img src="img/liked_photo.png" alt="Фото двух мужчин" class="shot-block__img" width="73" height="73">
                         <div class="shot-block__content">
                             <p class="shot-block__txt">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="shot-block__link">Medication »</a>
@@ -130,7 +138,7 @@
                         </div>
                     </section>
                     <section class="shot-block liked__shot-block">
-                        <img src="" alt="" class="shot-block__img">
+                        <img src="img/liked_photo.png" alt="Фото двух мужчин" class="shot-block__img" width="73" height="73">
                         <div class="shot-block__content">
                             <p class="shot-block__txt">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="shot-block__link">Medication »</a>

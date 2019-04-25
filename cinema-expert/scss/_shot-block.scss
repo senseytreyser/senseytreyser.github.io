@@ -1,0 +1,22 @@
+﻿.shot-block{
+    display: flex;
+
+    &__img{
+        border: 1px solid $br_color_liked;
+        outline: 2px solid $bg_color_content;
+        outline-offset: -3px;
+        width: 75px;
+    }   
+    &__content{
+        margin-left: 13.5px;
+        
+    }   
+    &__txt{
+        @include txt($size:13px, $line-height:1.3, $color:$txt_color_dark);
+    }  
+    &__link{
+        @include txt($size:13px, $line-height:1.3, $color:$link_color);
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
