@@ -64,13 +64,18 @@
         </main>
         <aside class="aside">
             <section id="interesting" class="interesting">
-                <h2 class="title title_triangle-violet interesting__title">Интересное</h2>
-                <div class="tab-btns interesting__tab-btns">
-                    <button class="tab-btns__btn interesting__btn">Мода</button>
-                    <button class="tab-btns__btn interesting__btn">Кино</button>
-                    <button class="tab-btns__btn interesting__btn">TV</button>
-                </div>
-                <div class="interesting__tab">
+                <header class="interesting__header">
+                    <h2 class="title title_triangle-violet interesting__title">Интересное</h2>
+                </header>
+                
+                <input id="tab-btn-1" type="radio" name="tab" class="interesting__tab-btn-radio" checked>
+                <label for="tab-btn-1" class="interesting__tab-btn tab-btns__btn tab-btn-1"> Мода </label>
+                <input id="tab-btn-2" type="radio" name="tab" class="interesting__tab-btn-radio">
+                <label for="tab-btn-2" class="interesting__tab-btn tab-btns__btn tab-btn-2">Кино</label>
+                <input id="tab-btn-3" type="radio" name="tab" class="interesting__tab-btn-radio">
+                <label for="tab-btn-3" class="interesting__tab-btn tab-btns__btn tab-btn-3">TV</label>
+
+                <div class="interesting__tab tab-1">
                     <section class="info-block interesting__info-block">
                             <a href="#" class="info-block__img-link">
                                 <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
@@ -111,6 +116,52 @@
                         </div>
                     </section>
                 </div> 
+
+                <div class="interesting__tab tab-2">
+                    <section class="info-block interesting__info-block">
+                            <a href="#" class="info-block__img-link">
+                                <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
+                            </a>
+                        <div class="info-block__content">
+                            <h3 class="info-block__title">
+                                Lorem Ipsum is simply dummy text of the printing 
+                            </h3>
+                            <p class="info-block__txt">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="interesting__tab tab-3">
+                    <section class="info-block interesting__info-block">
+                            <a href="#" class="info-block__img-link">
+                                <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
+                            </a>
+                        <div class="info-block__content">
+                            <h3 class="info-block__title">
+                                Lorem Ipsum is simply dummy text of the printing 
+                            </h3>
+                            <p class="info-block__txt">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                            </p>
+                        </div>
+                    </section>
+                    <section class="info-block interesting__info-block">
+                            <a href="#" class="info-block__img-link">
+                                <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
+                            </a>
+                        <div class="info-block__content">
+                            <h3 class="info-block__title">
+                                Lorem Ipsum is simply dummy text of the printing 
+                            </h3>
+                            <p class="info-block__txt">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
             </section>
             <section class="liked">
                 <h2 class="liked__title">Понравилось посетителям</h2>

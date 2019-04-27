@@ -8,7 +8,7 @@
 
     &__link{
         @include txt($size:18px, $line-height:2, $color: $txt_color_light, $align: center);  
-        display: flex;
+        //display: flex;
         text-transform: uppercase;
         padding: 0 20px;
     }
@@ -37,4 +37,32 @@
             background-color: $bg_color_nav_gray;
         }
     }
+}
+
+@media (max-width: 575.98px) { 
+ 
+}
+
+@media (max-width: 767.98px) { 
+    .nav{
+        &__list{
+            flex-direction: column;
+        }
+        
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .nav{
+        &__list{
+            flex-wrap: wrap;
+        }
+        &__link{
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) { 
+
 }

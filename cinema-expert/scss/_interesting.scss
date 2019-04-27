@@ -1,21 +1,28 @@
 ﻿.interesting{
     align-items: flex-start;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    //flex-direction: column;
     width: 100%;
+
+    &__header{
+        width: 100%;
+    }
 
     &__title{
         $title_size: 19px;
+        $norm_pad: 18px;
+        $right_pad: $norm_pad + $title_size*2;
 
         @include title($size:$title_size, $line-height:2, $color:$title_color_light, $align:left);
         box-sizing: border-box;
         background-color: $bg_color_intersting_title;
         display: inline-block;
         text-transform: uppercase;  
-        padding: 0 18px;
+        padding: 0 $right_pad 0 $norm_pad;
         position: relative;
 
-        &:after{
+        &:before{
             $br_size: $title_size * 2;
             
             content: "";
@@ -23,21 +30,47 @@
             height: 0;
             border-style: solid;
             border-width: $br_size 0 0 $br_size;
-            border-color: transparent transparent transparent $bg_color_intersting_title;
+            border-color: $bg_color_content transparent transparent transparent;
             position: absolute;
-            right: - $br_size;
+            right: 0;
             top: 0;
+        }
+        &::after{
+            content: "";
+            width: 100%;
         }
     }
 
-    &__tab-btns{
+    &__tab-btn{
+        cursor: pointer;
         margin-top: 4px;
-        width: 100%;
+        width: 33.3%;
+
+        &-radio{
+            display: none;
+        }
     }
 
     &__tab{
+        display: none;
         width: 100%;
     }
+
+    #tab-btn-1:checked~.tab-1,
+    #tab-btn-2:checked~.tab-2,
+    #tab-btn-3:checked~.tab-3{
+        display: block;
+    }
+
+    #tab-btn-1:checked~.tab-btn-1,
+    #tab-btn-2:checked~.tab-btn-2,
+    #tab-btn-3:checked~.tab-btn-3{
+        &::after{
+            display: block;
+        }
+    }
+
+
 
     &__info-block{
         border-bottom: 1px solid $br_color_interesting;
