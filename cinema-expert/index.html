@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.css">
     <title>Эксперт Кино</title>
+    <script src="/js/carousel.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
     <div class="content content_color-line">
@@ -46,7 +48,7 @@
                 <p class="txt article__txt">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
                 </p>
-                <div class="carousel article__carousel">
+                <div id="carousel" class="carousel article__carousel">
                     <img src="img/slider_0.png" alt="главное изображение" class="carousel__window">
                     <div class="carousel__img-row">
                         <img src="img/slider_1.png" alt="" class="carousel__img">
@@ -61,14 +63,14 @@
             </article>
         </main>
         <aside class="aside">
-            <section class="interesting">
+            <section id="interesting" class="interesting">
                 <h2 class="title title_triangle-violet interesting__title">Интересное</h2>
                 <div class="tab-btns interesting__tab-btns">
                     <button class="tab-btns__btn interesting__btn">Мода</button>
                     <button class="tab-btns__btn interesting__btn">Кино</button>
                     <button class="tab-btns__btn interesting__btn">TV</button>
                 </div>
-                <div class="interesting__content">
+                <div class="interesting__tab">
                     <section class="info-block interesting__info-block">
                             <a href="#" class="info-block__img-link">
                                 <img src="img/cinema_wrap.png" alt="Обложка" class="info-block__img" width="75" height="90">
