@@ -58,7 +58,17 @@
             flex-wrap: wrap;
         }
         &__link{
-            padding: 0 15px;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            //padding: 0 15px;
+        }
+        &__item{
+            flex: 2 0 auto;
+
+            &:nth-of-type(-n+4){
+                flex: 1 0 25%;    
+            }
         }
     }
 }

@@ -16,10 +16,15 @@
     }
 
     &__img{
+        $img_number: 4;
+        $img_margin: 2%;
+
         cursor: pointer;
         border: 1px solid $br_color_interesting;
         outline: 2px solid $bg_color_content;
         outline-offset: -3px;
+        height: 100%;
+        width: (100%- $img_margin *($img_number - 1) / $img_number) 
     }
 }
 

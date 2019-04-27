@@ -16,6 +16,7 @@
     }
 
     &__social-links{
+        margin-top: 20px;
         height: 36px;
     }
 
@@ -23,4 +24,33 @@
         margin-top: 22px; 
         width: 100%;
     }
+}
+
+@media (max-width: 575.98px) { 
+    
+}
+
+@media (max-width: 767.98px) { 
+
+}
+
+@media (max-width: 991.98px) { 
+    .header{
+        &__logo{
+            margin-right: 70%;
+        }
+
+        &__search{
+            flex: 0 1 auto;
+            //margin-left: 10px;
+        }
+
+        &__social-links{
+            //width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) { 
+
 }
