@@ -19,5 +19,8 @@
         @include txt($size:13px, $line-height:1.3, $color:$link_color);
         display: inline-block;
         margin-top: 10px;
+        &:hover::after{
+            content: " \00BB"
+        }
     }
 }

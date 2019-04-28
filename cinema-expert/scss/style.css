@@ -269,6 +269,92 @@ body {
   }
 }
 
+.nav {
+  -webkit-transition: max-height .4s;
+  transition: max-height .4s;
+}
+
+.nav__btn {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 36px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.nav__checkbox {
+  display: none;
+}
+
+.nav__checkbox:checked ~ .nav {
+  -webkit-transition: max-height .4s;
+  transition: max-height .4s;
+  max-height: 500px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.nav__checkbox:checked ~ .nav__btn .nav__icon {
+  background: transparent;
+}
+
+.nav__checkbox:checked ~ .nav__btn .nav__icon::before, .nav__checkbox:checked ~ .nav__btn .nav__icon::after {
+  top: 0;
+}
+
+.nav__checkbox:checked ~ .nav__btn .nav__icon::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.nav__checkbox:checked ~ .nav__btn .nav__icon::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.nav__icon {
+  display: block;
+  position: relative;
+  background: #00aedb;
+  width: 90%;
+  height: 7.2px;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+}
+
+.nav__icon::after, .nav__icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #00aedb;
+  width: 100%;
+  height: 7.2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.nav__icon::after {
+  top: 14.4px;
+}
+
+.nav__icon::before {
+  top: -14.4px;
+}
+
 .nav__list {
   background-color: #898989;
   display: -webkit-box;
@@ -316,6 +402,15 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .nav {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .nav__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -670,11 +765,11 @@ body {
   color: #fff;
   font-family: open-sans-bold, Arial, Helvetica, sans-serif;
   font-size: 17px;
-  line-height: 2;
+  line-height: 1.5;
   text-align: left;
   background-color: #5261ac;
   margin-top: 11px;
-  padding: 0 18px;
+  padding: 4.25px 18px;
   text-transform: uppercase;
 }
 
@@ -734,5 +829,9 @@ body {
   text-align: left;
   display: inline-block;
   margin-top: 10px;
+}
+
+.shot-block__link:hover::after {
+  content: " \00BB";
 }
 /*# sourceMappingURL=style.css.map */

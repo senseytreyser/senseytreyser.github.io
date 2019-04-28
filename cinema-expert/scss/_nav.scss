@@ -1,4 +1,81 @@
 ﻿.nav{
+    $btn_h: 36px;
+    $btn_w: 50px;
+    $btn_l_h: $btn_h / 5;
+
+    transition: max-height .4s;    
+
+    &__btn {
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: $btn_w;
+        height: $btn_h;
+        cursor: pointer;
+        transition: transform .4s;
+    }
+
+    &__checkbox{
+        display: none;
+        &:checked ~ {
+            
+            .nav{
+                transition: max-height .4s;
+                //height: auto;
+                max-height: 500px;
+                transition-delay: 0s;
+  
+                &__btn {
+                  .nav__icon {
+                      background: transparent;
+  
+                      &::before,
+                      &::after {
+                          top: 0;
+                      }
+    
+                      &::after {
+                        transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                      }
+    
+                      &::before {
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                      }
+                  }
+                }
+            }
+        }
+    }
+
+    &__icon{
+        display: block;
+        position: relative;
+        background: $burger_color;
+        width: 90%;
+        height: $btn_l_h;
+        transition-property: transform, background-color;
+        transition-duration: .4s;    
+        
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background: $burger_color;
+            width: 100%;
+            height: $btn_l_h;
+            transition: .4s;
+        }
+        &::after {
+          top: $btn_l_h * 2;
+        }
+        &::before {
+          top: - $btn_l_h * 2;
+        }
+    }
 
     &__list{
         background-color: $bg_color_nav_gray;
@@ -45,6 +122,12 @@
 
 @media (max-width: 767.98px) { 
     .nav{
+        max-height: 0;
+        overflow: hidden;
+
+        &__btn{
+            display: flex;
+        }
         &__list{
             flex-direction: column;
         }

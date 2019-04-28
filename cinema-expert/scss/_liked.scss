@@ -4,16 +4,15 @@
 
     &__title{
         $title_size: 17px;
+        $title_pd: $title_size * 0.5 / 2;
 
-        @include title($size:$title_size, $line-height:2, $color:$title_color_light, $align:left);
+        @include title($size:$title_size, $line-height:1.5, $color:$title_color_light, $align:left);
         background-color: $bg_color_liked_title;
         margin-top: 11px;
-        padding: 0 18px;
+        padding: $title_pd 18px;
         text-transform: uppercase;  
     }
-    &__content{
-
-    }
+    
     &__shot-block{
         margin-top: 17px;
     }
