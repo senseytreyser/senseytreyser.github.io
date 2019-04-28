@@ -84,6 +84,8 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,6 +103,7 @@ body {
 }
 
 .header__search {
+  margin-top: 20px;
   height: 36px;
 }
 
@@ -122,6 +125,10 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+    margin-top: 15px;
+  }
+  .header__social-links {
+    margin-top: 15px;
   }
 }
 
