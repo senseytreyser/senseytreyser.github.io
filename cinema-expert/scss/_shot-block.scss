@@ -4,6 +4,7 @@
 
     &__img{
         border: 1px solid $br_color_liked;
+        flex: 0 0 auto;
         outline: 2px solid $bg_color_content;
         outline-offset: -3px;
         width: 75px;

@@ -452,8 +452,8 @@ body {
   border: 1px solid #dedddd;
   outline: 2px solid #fff;
   outline-offset: -3px;
-  height: 100%;
-  width: 98.5%;
+  height: auto;
+  width: auto;
 }
 
 .aside {
@@ -682,10 +682,6 @@ body {
   margin-top: 17px;
 }
 
-.liked__shot-block:first-of-type {
-  margin-top: 4px;
-}
-
 @media (max-width: 991.98px) {
   .liked {
     width: 100%;
@@ -693,6 +689,9 @@ body {
   .liked__title {
     font-size: 19px;
     margin-top: 0;
+  }
+  __shot-block:first-of-type {
+    margin-top: 4px;
   }
 }
 
@@ -707,6 +706,9 @@ body {
 
 .shot-block__img {
   border: 1px solid #dedddd;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   outline: 2px solid #fff;
   outline-offset: -3px;
   width: 75px;

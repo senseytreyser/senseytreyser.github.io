@@ -16,10 +16,6 @@
     }
     &__shot-block{
         margin-top: 17px;
-
-        &:first-of-type{
-            margin-top: 4px;
-        }
     }
 }
 
@@ -38,6 +34,11 @@
         &__title{
             font-size: 19px;
             margin-top: 0;
+        }
+    }
+    &__shot-block{
+        &:first-of-type{
+            margin-top: 4px;
         }
     }
 }
