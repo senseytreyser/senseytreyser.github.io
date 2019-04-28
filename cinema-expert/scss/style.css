@@ -217,6 +217,16 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 767.98px) {
+  .search__input {
+    width: 70%;
+  }
+  .search__button {
+    width: 30%;
+    padding: 0;
+  }
+}
+
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,6 +697,9 @@ body {
 }
 
 .shot-block {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
