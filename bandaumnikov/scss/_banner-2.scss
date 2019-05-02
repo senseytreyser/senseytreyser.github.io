@@ -7,7 +7,7 @@
     background-image: url(../img/bg_banner_2.png);    
     background-size: auto 100%;
     box-sizing: border-box;
-
+    cursor: pointer;
     position: relative;
     
     &::before{
@@ -24,7 +24,21 @@
         position: absolute;
         right: $right;
         bottom: $bottom;
+        transition: transform 0.2s;
         //transform: translate(0, -50%)
+    }
+
+    &:hover &__button{
+        animation: bref 2s linear alternate infinite;
+    }
+    &:active &__button{
+        animation-iteration-count: 0;
+        transform: scale(1);
+    }
+
+    @keyframes bref {
+        from{ transform: scale(1);}
+        to{ transform: scale(1.1); }
     }
 }
 

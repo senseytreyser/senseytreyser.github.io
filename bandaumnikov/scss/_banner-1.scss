@@ -8,6 +8,7 @@
     padding: 12px 15px 13px;
 
     &__img-wrap{
+        cursor: pointer;
         margin-right: 43px;
         position: relative;
 
@@ -20,7 +21,15 @@
             right: 0;
             top: 0;
             transform: translate(41%, -8%);
+            transition: transform 0.2s;
             width: 106px;
+        }
+
+        &:hover::after{
+            transform: scale(1.1) translate(39%, -6%);
+        } 
+        &:active::after{
+            transform: translate(41%, -8%);
         }
     }
 

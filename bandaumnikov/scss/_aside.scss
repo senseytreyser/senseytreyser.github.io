@@ -15,26 +15,32 @@
     }
 
     &__banner-1{
-        margin-right: 6%;
+        //margin-right: 6%;
         max-width: 566px;
+        width: 565px;
     }
 
     &__banner-2{
         max-height: 294px;
         max-width: 564px;
+        width: 565px;
     }
 
     &__banner-1,
     &__banner-2{
-        width: 50%;
+        //width: 50%;
     }
 }
 
-@media (max-width: 575.98px) {
+@media(max-width: 1199.98px){
     .aside{
-        padding: 0;
+        // &__banner-1,
+        // &__banner-2{
+        //     width: 565px;
+        // }
     }
 }
+
 
 @media (max-width: 991.98px) {  
     .aside{
@@ -48,5 +54,11 @@
         &__banner-1{
             margin: 0;
         }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .aside{
+        padding: 0;
     }
 }
