@@ -3,8 +3,6 @@
     $right: 5.7%;
     $bottom: 7.5% ;
 
-
-
     background-color: $bg_clr;
     background-image: url(../img/bg_banner_2.png);    
     background-size: auto 100%;
@@ -27,5 +25,15 @@
         right: $right;
         bottom: $bottom;
         //transform: translate(0, -50%)
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-2{
+        $right: 5%;
+        $bottom: 7% ;
+
+        right: $right;
+        bottom: $bottom;
     }
 }
