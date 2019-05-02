@@ -1,0 +1,45 @@
+﻿.button{
+    $bg_clr: #ff0072;
+    $txt_clr: #fff;
+    $shd_clr: #000;
+
+    background-color: $bg_clr;
+    box-shadow: 1px 1px 2px 0 $shd_clr; 
+    border: none;
+    //border: 1px solid $bg_clr;
+    cursor: pointer;
+    padding: 12.5px 15px;
+
+    &__txt{
+        color: $txt_clr;
+        font-family: $proxima_b;
+        font-size: 18px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    &:hover{
+        box-shadow: none; 
+    }
+
+    &:active{
+        box-shadow: inset 0px 0px 3px 1px $shd_clr; 
+    }
+
+    &:focus{
+        outline: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .button{
+        padding: 2.50% 14px;
+
+        &__txt{
+            font-size: 12px;
+            font-size: 2.6vw;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+    }
+}

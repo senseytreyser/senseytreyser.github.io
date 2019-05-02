@@ -1,0 +1,46 @@
+﻿.banner-1{
+    $bg_yellow: #ffe12f;
+
+    background-color: $bg_yellow;
+    background-image: url(../img/bg_banner_1.png);
+    box-sizing: border-box;
+    display: flex;
+    padding: 12px 15px 13px;
+
+    &__img-wrap{
+        margin-right: 43px;
+        position: relative;
+
+        &::after{
+            background-image: url(../img/cubometria_stik.png);
+            content: "";
+            display: block;
+            height: 119px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(41%, -8%);
+            width: 106px;
+        }
+    }
+
+    &__content{
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    
+}
+
+@media (max-width: 767.98px) {
+    .banner-1{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__img-wrap{
+            // float: left;
+            height: auto;
+        }
+    }   
+}

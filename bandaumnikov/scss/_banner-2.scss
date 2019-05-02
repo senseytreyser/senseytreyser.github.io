@@ -1,0 +1,31 @@
+﻿.banner-2{
+    $bg_clr: #833a94;
+    $right: 5.7%;
+    $bottom: 7.5% ;
+
+
+
+    background-color: $bg_clr;
+    background-image: url(../img/bg_banner_2.png);    
+    background-size: auto 100%;
+    box-sizing: border-box;
+
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: block;
+        padding-top: 52.3%;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+
+    &__button{
+        position: absolute;
+        right: $right;
+        bottom: $bottom;
+        //transform: translate(0, -50%)
+    }
+}

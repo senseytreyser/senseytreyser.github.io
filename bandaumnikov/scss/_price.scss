@@ -1,0 +1,33 @@
+﻿.price{
+    $new_clr: #ff0072;
+    $old_clr: #000;
+
+    &__new-price{
+        color: $new_clr;
+        display: block;
+        font-family: $proxima_b;
+        font-size: 36px;
+        line-height: 1;  
+        letter-spacing: -0.04em;
+        margin-top: 4px;
+    }   
+    &__old-price{
+        color: $old_clr;
+        display: block;
+        font-family: $proxima_r;
+        font-size: 16px;
+        line-height: 1.2;
+        margin-left: 3px;           
+        position: relative; 
+
+        &::before{
+            border: 1px solid $new_clr;
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: -2px;
+            transform: rotate(8deg);
+            width: 60px;
+        }
+    }  
+}
