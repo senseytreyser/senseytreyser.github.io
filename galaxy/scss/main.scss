@@ -1,0 +1,16 @@
+﻿.main{
+    box-sizing: border-box;
+    padding: 9px 24px;
+
+    &__section{
+        margin-bottom: 17px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .main{
+        border-top: 1px solid $border_color;
+        border-bottom: 1px solid $border_color;
+        padding: 5px 0;
+    }
+}
