@@ -1,0 +1,110 @@
+.filter{
+    width: 500px;
+}
+
+.filter-row{
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.select-type,
+.select-operation,
+.input-value{
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+    padding: 3px;
+
+}
+
+.input-value{
+    padding: 4px;
+}
+
+.cross{
+    color:gray;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.button-fieldset{
+    border-bottom: 1px solid gray;
+    padding: 20px 0;
+}
+
+.add-button{
+    background: #fff;
+    border: none;
+    margin: 0 0 0 15px;
+    color: blue;
+    cursor: pointer;
+    position: relative;
+}
+
+.add-button:hover{
+    color: lightblue;
+}
+
+.add-button:active{
+    color: blue;
+}
+
+.add-button:focus,
+.apply-button:focus,
+.clear-button:focus{
+    outline: none;
+}
+
+.add-button::before{
+    content: "+";
+    font-size: 22px;
+    left: -12px;
+    position: absolute;
+    top: -4px;
+}
+
+.action-fieldset{
+    padding: 10px 0;
+}
+
+.apply-button{
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.apply-button:hover{
+    background: white;
+    color: blue;
+}
+
+.apply-button:active{
+    background: blue;
+    color: white;
+}
+
+.clear-button{
+    margin: 0 0 0 10px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+    color: gray;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.clear-button:active{
+    background: white;
+    color: gray;
+}

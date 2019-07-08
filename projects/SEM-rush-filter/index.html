@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SEMrush-filter</title>
+</head>
+<body>
+    
+    <script src="js/constants.js"></script>
+    <script src="js/filer.js"></script>
+    <script src="js/filter-row.js"></script>
+    <script src="js/behavior.js"></script>
+    <script>
+        /*
+        var filter = new Filter();
+        var filterRow1 = new FilterRow("Number field","Concept",4);
+        var filterRow2 = new FilterRow("Text field","Concept","abc");
+        filter.addRow(filterRow1);
+        filter.addRow(filterRow2);
+        filter.showInfo();
+        */
+        var filter = new Filter("filter", "filter");
+        var row = new FilterRow();
+        filterNode = document.body.appendChild(filter.render());
+        filterNode.insertBefore(row.render(),filterNode.children[0]);
+        new Behavior(filterNode,filter);
+
+    </script>
+
+</body>
+</html>
